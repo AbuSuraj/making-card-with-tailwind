@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* grouping class */
+@layer components{
+    /* koyekta class niye grouping korte hole tokon eigula re components er vitre korbo */
+    .btn{
+        @apply px-4 py-1 border rounded-full text-sm  font-semibold focus:outline-none focus:ring-2 focus:ring-offset-2 dark:focus:ring-offset-red-800
+        dark:focus:border-transparent;
+    }
+    .btn-purple{
+         @apply text-purple-600 border-purple-200 hover:text-white
+         hover:bg-purple-600 
+         hover:border-transparent focus:ring-purple-800  dark:text-purple-600 
+    }
+    .btn-green{
+        @apply text-green-600 border-green-200 hover:text-white
+        hover:bg-green-600 
+        hover:border-transparent focus:ring-green-800  dark:text-green-600 
+        
+    }
+}
+@layer base{
+    /* kuno tag ke nijer eccha moto edit korte hole base er vitore korte hobe */
+    h1{
+        @apply text-2xl;
+    }
+}
+@layer utilities{
+    /* suja kotha holo: eita holo custom class
+    r custom class utilities er vitore korte  */
+    .para{
+        font-size: 12px;
+    }
+}
